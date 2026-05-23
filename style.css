@@ -67,10 +67,10 @@ body {
   color: inherit;
 }
 
-.image-placeholder {
+.project-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  background: #d8d1c6;
+  display: block;
+  object-fit: cover;
 }
 
 .project-card h2 {
