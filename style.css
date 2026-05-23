@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f1e8;
+  color: #1e1e1b;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.site-header {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.18em;
+}
+
+.brand p {
+  margin-top: 18px;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+}
+
+.menu-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 34px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #1e1e1b;
+  margin-bottom: 8px;
+}
+
+.home-grid {
+  width: min(1100px, 90%);
+  margin: 0 auto 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 40px;
+}
+
+.project-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #d8d1c6;
+}
+
+.project-card h2 {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+}
+
+/* Versión para celular */
+@media (max-width: 700px) {
+  .site-header {
+    min-height: 45vh;
+  }
+
+  .brand h1 {
+    font-size: 20px;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
